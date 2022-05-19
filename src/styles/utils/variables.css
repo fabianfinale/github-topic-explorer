@@ -1,0 +1,54 @@
+:root {
+  /* Foreground */
+  --color-fg-default: #adbac7;
+  --color-fg-muted: #768390;
+  --color-fg-subtle: #636e7b;
+
+  --color-accent-fg: #539bf5;
+  --color-success-fg: #57ab5a;
+  --color-attention-fg: #c69026;
+  --color-severe-fg: #cc6b2c;
+  --color-danger-fg: #e5534b;
+  --color-done-fg: #986ee2;
+  --color-sponsors-fg: #c96198;
+
+  --color-fg-on-emphasis: #cdd9e5;
+
+  /* Background */
+  --color-canvas-default: #22272e;
+  --color-canvas-inset: #1c2128;
+  --color-canvas-subtle: #2d333b;
+  --color-neutral-emphasis-plus: #636e7b;
+
+  --color-accent-subtle: rgba(65, 132, 228, 0.15);
+  --color-accent-emphasis: #316dca;
+
+  --color-success-subtle: rgba(70, 149, 74, 0.15);
+  --color-success-emphasis: #347d39;
+
+  --color-attention-subtle: rgba(174, 124, 20, 0.15);
+  --color-attention-emphasis: #966600;
+
+  --color-severe-subtle: rgba(204, 107, 44, 0.15);
+  --color-severe-emphasis: #ae5622;
+
+  --color-danger-subtle: rgba(229, 83, 75, 0.15);
+  --color-danger-emphasis: #c93c37;
+
+  --color-done-subtle: rgba(152, 110, 226, 0.15);
+  --color-done-emphasis: #8256d0;
+
+  --color-sponsors-subtle: rgba(201, 97, 152, 0.15);
+  --color-sponsors-emphasis: #ae4c82;
+
+  /* Borders */
+  --color-border-default: #444c56;
+  --color-border-muted: #373e47;
+  --color-border-subtle: rgba(205, 217, 229, 0.1);
+
+  /* Shadows */
+  --color-shadow-small: 0 0 transparent;
+  --color-shadow-medium: 0 3px 6px #1c2128;
+  --color-shadow-large: 0 8px 24px #1c2128;
+  --color-shadow-extra-large: 0 12px 48px #1c2128;
+}
