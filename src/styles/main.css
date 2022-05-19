@@ -3,6 +3,17 @@
 @import './base/typography.css';
 @import './base/base.css';
 
+/* Components */
+@import './components/brand-logo.css';
+@import './components/collapsible.css';
+
+/* Layout */
+@import './layout/navbar.css';
+@import './layout/footer.css';
+
+/* Pages */
+@import './pages/home.css';
+
 /* Utils */
 @import './utils/variables.css';
 @import './utils/utilities.css';

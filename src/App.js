@@ -1,10 +1,12 @@
+import Layout from './components/layout/Layout';
+import AppRoutes from './AppRoutes';
 import './styles/main.css';
 
 function App() {
   return (
-    <div className='App'>
-      <h1>GitHub topic explorer</h1>
-    </div>
+    <Layout>
+      <AppRoutes />
+    </Layout>
   );
 }
 

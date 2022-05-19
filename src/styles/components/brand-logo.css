@@ -1,0 +1,18 @@
+.brand {
+  color: var(--color-fg-on-emphasis);
+  padding: 10px 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand__logo {
+  margin-right: 1.5rem;
+}
+
+.brand:hover {
+  text-decoration: none;
+}
