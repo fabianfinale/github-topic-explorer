@@ -23,7 +23,7 @@ npm install
 ## Authenticating with GraphQL
 To communicate with the GraphQL server, you'll need an OAuth token with the right scopes.
 
-Follow the steps in "[Creating a personal access token" to create a token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). The scopes you require depends on the type of data you're trying to request. For example, select the User scopes to request user data. If you need access to repository information, select the appropriate Repository scopes.
+Follow the steps in "[Creating a personal access token"](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create a token. The scopes you require depends on the type of data you're trying to request. For example, select the User scopes to request user data. If you need access to repository information, select the appropriate Repository scopes.
 
 To match the behavior of the GraphQL Explorer, request the following scopes:
 
