@@ -6,6 +6,9 @@
 /* Components */
 @import './components/brand-logo.css';
 @import './components/collapsible.css';
+@import './components/button.css';
+@import './components/topic.css';
+@import './components/searchbox.css';
 
 /* Layout */
 @import './layout/navbar.css';
@@ -13,7 +16,7 @@
 
 /* Pages */
 @import './pages/home.css';
+@import './pages/assignment.css';
 
 /* Utils */
 @import './utils/variables.css';
-@import './utils/utilities.css';

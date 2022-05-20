@@ -1,0 +1,39 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 5px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid;
+  border-radius: 6px;
+  appearance: none;
+  width: 100px;
+}
+
+.btn--primary {
+  border-color: var(--color-success-emphasis);
+  background-color: var(--color-success-emphasis);
+  color: var(--color-fg-on-emphasis);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-btn-primary-hover-bg);
+  border-color: var(--color-btn-primary-hover-border);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+}
+
+.btn--link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-fg-on-emphasis);
+  width: auto;
+}

@@ -10,6 +10,7 @@ html {
 body {
   background-color: var(--color-canvas-default);
   height: 100%;
+  font-size: 1.2rem;
 }
 
 .root-container {

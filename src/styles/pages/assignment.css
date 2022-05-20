@@ -1,0 +1,9 @@
+.assignment__container {
+  padding-top: 5rem;
+  margin: 2rem;
+  max-width: 80%;
+}
+
+.assignment__title {
+  text-align: center;
+}

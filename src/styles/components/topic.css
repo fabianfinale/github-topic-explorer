@@ -1,0 +1,107 @@
+.topic-list {
+  background-color: var(--color-canvas-default);
+  border-color: var(--color-border-default);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  margin-bottom: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  padding-top: 0;
+}
+.topic__container {
+  background-color: var(--color-canvas-default);
+  border-color: var(--color-border-default);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  margin-bottom: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.topic__header {
+  padding: 16px;
+  margin: -1px -1px 0;
+  background-color: var(--color-canvas-subtle);
+  border-color: var(--color-border-default);
+  border-style: solid;
+  border-width: 1px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  color: var(--color-fg-on-emphasis);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: medium;
+}
+
+.topic__body {
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.topic__body:last-of-type {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.related__topic {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.topic__name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topic__icon {
+  margin-right: 1rem;
+}
+.metric__icon,
+.metric__title {
+  margin: 0 0.5rem;
+}
+
+.topic__metrics {
+  margin-right: 5.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100px;
+}
+
+.related__topic > .topic__metrics {
+  flex-direction: row-reverse;
+}
+
+.metric__title {
+  font-weight: lighter;
+}
+
+@media (max-width: 600px) {
+  .related__topic {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .related__topic > .topic__metrics {
+    flex-direction: row;
+    padding-left: 1.6rem;
+  }
+}
