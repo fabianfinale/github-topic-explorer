@@ -1,22 +1,69 @@
-# Getting Started with Create React App
+# Live Demo
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2c77aaf3-10bd-4ee1-9275-0aaf249d47df/deploy-status)](https://app.netlify.com/sites/github-topic-explorer-assessment/deploys)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A live demo can be found at [https://github-topic-explorer-assessment.netlify.app/](https://github-topic-explorer-assessment.netlify.app/)
 
-## Available Scripts
+# Getting Started
+
+In order to get started, these steps must be followed:
+1. Install dependencies
+2. Add GraphQL Authorization Token
+3. Run the app in the development mode
+
+## Installing dependencies
+In the project directory, you can run:
+```sh
+yarn install
+```
+or
+```sh
+npm install
+```
+
+## Authenticating with GraphQL
+To communicate with the GraphQL server, you'll need an OAuth token with the right scopes.
+
+Follow the steps in "[Creating a personal access token" to create a token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). The scopes you require depends on the type of data you're trying to request. For example, select the User scopes to request user data. If you need access to repository information, select the appropriate Repository scopes.
+
+To match the behavior of the GraphQL Explorer, request the following scopes:
+
+* user
+* public_repo
+* repo
+* repo_deployment
+* repo:status
+* read:repo_hook
+* read:org
+* read:public_key
+* read:gpg_key
+
+The API notifies you if a resource requires a specific scope.
+
+Once the token is generated, a **.env** file must be created in the root directory, storing the OAuth token as an environment variable, under the following key:
+```sh
+REACT_APP_ACCESS_TOKEN
+```
+
+## Run the app in the development mode
 
 In the project directory, you can run:
+```sh
+yarn start
+```
+or
+```sh
+npm start
+```
 
-### `npm start`
-
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.
 You may also see any lint errors in the console.
 
+## Additional Scripts
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in the interactive watch mode.
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
@@ -41,7 +88,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more in the [Create React App documentation].
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
