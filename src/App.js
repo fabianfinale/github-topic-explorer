@@ -1,4 +1,4 @@
-import Layout from './components/layout/Layout';
+import Layout from './layout/Layout';
 import AppRoutes from './AppRoutes';
 import './styles/main.css';
 
