@@ -142,7 +142,7 @@ describe('renders the app', () => {
       },
     };
     render(
-      <MockedProvider>
+      <MockedProvider mocks={[errorMock]} addTypename={false}>
         <Home />
       </MockedProvider>
     );
