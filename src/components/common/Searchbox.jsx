@@ -32,9 +32,16 @@ const Searchbox = ({ isLoading }) => {
           onChange={handleChange}
           autoFocus
         />
-        <button className='btn btn--primary' disabled={!searchQuery}>
+        <button
+          className='btn btn--primary'
+          disabled={!searchQuery}
+          data-testid='search-button'>
           {isLoading ? (
-            <FontAwesomeIcon className='fa-spin' icon={faCircleNotch} />
+            <FontAwesomeIcon
+              className='fa-spin'
+              icon={faCircleNotch}
+              data-testid='spinner'
+            />
           ) : (
             'Search'
           )}

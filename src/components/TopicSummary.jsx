@@ -6,14 +6,14 @@ import StargazerCount from './common/StargazerCount';
 
 const TopicSummary = ({ topic }) => {
   return (
-    <section className='topic__container'>
+    <section className='topic__container' data-testid='topic-container'>
       <div className='topic__header'>
         <FontAwesomeIcon
           className='topic__icon'
           icon={faGithubSquare}
           size='2x'
         />
-        {topic.name}
+        <span>{topic.name}</span>
       </div>
       <div className='topic__body'>
         <StargazerCount count={topic.stargazerCount} verbose />
